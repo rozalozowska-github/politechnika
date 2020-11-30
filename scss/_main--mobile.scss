@@ -36,14 +36,20 @@
 	}
 	.contact {  
 		min-width: 90%;
-		top: 10%;
+		top: 74px;
 		left: 0;
 		&__container {
 			/*max-width: 90%;*/
 		}		
-		#mapid { 
+		&__map { 
 			margin-top: 20px;
 		}
 	} 
+	.scrollContactBox {
+		max-height: calc(100vh - 50px);
+		max-width: 100%;
+		overflow: auto;
+
+	}
 
 }

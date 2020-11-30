@@ -23,9 +23,8 @@
 	    font-family: 'Montserrat', sans-serif;
 	    font-size: 16px;
 	    font-weight: 400;
-	    min-height: 50vh;
 	    overflow: auto;
-	    padding-top: 25px;
+	    padding-top: 2px;
 	    position: fixed;
 	    text-align: center;
 	    top: 102px;
@@ -35,6 +34,7 @@
 	    z-index: 2000;
 	    .navbar-nav {
     		margin-top: 30px;
+    		padding-right: 0;
 	    }
 		.dropdown__menu {	
 			border: none;		
@@ -60,9 +60,15 @@
     	right: 12px;
     	height: 24px;
 		width: 24px;
+		Z-index: 2000;
 		svg {
 			font-size: 24px;
 		}
+	}
+	.scrollToSee {
+		max-height: 300px;
+		max-width: 100%;
+		overflow: auto;
 	}
 	.navbar__about {		
 		border-bottom-left-radius: 0;
@@ -76,16 +82,33 @@
 		}
 	}
 	.navbar__my-profile {
-    	border-top-width: 4px;
-    	border-top-style: solid;
-		margin: 40px 0 0 0;
-		padding: 20px 0 0 0;
+	    border-top-width: 4px;
+	    border-top-style: solid;
+	    border-bottom-width: 4px;
+	    border-bottom-style: solid;
+	    margin: 0;
+	    padding: 20px 0 0 0;
+	    &__header {	    	
+		    font-size: 14px;
+		    font-weight: 700;
+		    line-height: 18px;
+		    text-align: left;
+		    margin-left: 15px;
+	    }
 		&__box {
 			background: transparent;
 			border-width: 0;
 		}
 		&__photo {
-			margin: 0;
+			float: left;
+			margin: 0 0 0 15px;
+			position: relative;
+		}
+		&__info {			
+		    float: left;
+		    position: relative;
+		    padding-left: 12px;
+		    text-align: left;
 		}
 	}
 }

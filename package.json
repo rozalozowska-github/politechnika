@@ -19,6 +19,8 @@
     "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5.3",
     "bootstrap-icons": "^1.1.0",
+    "jquery": "^3.5.1",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
     "node-sass": "^5.0.0"
   }
 }

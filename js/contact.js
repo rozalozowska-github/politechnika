@@ -29,5 +29,3 @@ function closeNav() {
   document.getElementById("mySidenav").classList.remove("open");
   document.getElementById("blurred").classList.remove("blur");
 }
-
-var mymap = L.map('mapid').setView([54.3716782, 18.614139], 17);
